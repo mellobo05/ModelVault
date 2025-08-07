@@ -53,9 +53,6 @@ async def generate_response(request: Request, prompt_request: PromptRequest):
     print(f"Received prompt: '{prompt}'")
 
     # --- Simulate LLM Response (Stubbed) ---
-    # For the take-home, a simple hardcoded or dummy response is sufficient.
-    # If you were to implement the bonus, this is where you'd integrate
-    # a local LLM like Hugging Face Transformers or Ollama.
     if "hello" in prompt.lower():
         generated_response = "Hello there! How can I assist you today?"
     elif "modelvault" in prompt.lower():
